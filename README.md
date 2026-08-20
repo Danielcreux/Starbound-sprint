@@ -2,9 +2,9 @@
 
 Videojuego de plataformas 2D desarrollado con Python y Pygame. Incluye cuatro niveles, físicas basadas en `delta time`, enemigos con comportamientos distintos, poderes temporales, efectos, cámara, HUD y un flujo completo de menús.
 
-<img width="1270" height="710" alt="image" src="https://github.com/user-attachments/assets/69a8142b-5cb4-424b-8ee7-e43894c2a0e8" />
+![Captura del juego](image-1.png)
 
-<img width="1264" height="705" alt="image" src="https://github.com/user-attachments/assets/f06d23e9-3109-4bc6-ae10-ee450ce53b0d" />
+![Captura del juego](image.png)
 
 ## Características
 
