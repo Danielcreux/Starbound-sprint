@@ -1,0 +1,107 @@
+{
+  "pixel_scale": 1,
+  "background_scale": 1,
+  "player": {
+    "source": "sprites/player/mario.png",
+    "scale": 1,
+    "background_colors": [[255, 255, 255], [230, 230, 230]],
+    "background_tolerance": 3,
+    "source_facing": "left",
+    "fps": {"idle": 4, "walk": 9, "run": 12, "jump": 8, "fall": 8, "hurt": 10, "death": 8},
+    "regions": {
+      "idle": [[200, 380, 80, 100]],
+      "walk": [[200, 380, 80, 100], [300, 380, 80, 100], [400, 380, 80, 100], [500, 380, 80, 100], [600, 380, 80, 100]],
+      "run": [[500, 280, 80, 100], [600, 280, 80, 100]],
+      "jump": [[200, 280, 80, 100]],
+      "fall": [[300, 280, 80, 100]],
+      "hurt": [[400, 280, 80, 100]],
+      "death": [[400, 80, 80, 100]]
+    },
+    "hitbox": [34, 44],
+    "draw_offset": [0, 0]
+  },
+  "walker": {
+    "source": "sprites/enemies/goomba.png",
+    "scale": 1,
+    "alpha_threshold": 128,
+    "render_size": [48, 48],
+    "fps": {"walk": 7, "death": 10},
+    "regions": {
+      "walk": [[140, 90, 75, 85], [210, 90, 75, 85], [280, 90, 75, 85], [350, 90, 75, 85], [420, 90, 75, 85]],
+      "death": [[15, 215, 90, 65], [95, 215, 90, 65], [175, 215, 90, 65], [255, 215, 90, 65]]
+    }
+  },
+  "patrol": {
+    "source": "sprites/enemies/beetle.png",
+    "scale": 1,
+    "alpha_threshold": 128,
+    "render_size": [48, 48],
+    "fps": {"walk": 8, "death": 10},
+    "regions": {
+      "walk": [[5, 70, 80, 90], [85, 70, 80, 90], [165, 70, 80, 90], [245, 70, 80, 90]],
+      "death": [[90, 175, 100, 90], [185, 175, 110, 90]]
+    }
+  },
+  "jumper": {
+    "source": "sprites/enemies/flyer.png",
+    "scale": 1,
+    "alpha_threshold": 128,
+    "render_size": [52, 52],
+    "fps": {"walk": 6, "jump": 8, "death": 10},
+    "regions": {
+      "walk": [[135, 85, 100, 75]],
+      "jump": [[135, 85, 100, 75], [225, 85, 100, 75], [315, 85, 100, 75], [405, 85, 100, 75]],
+      "death": [[135, 190, 100, 75], [235, 190, 100, 75], [335, 190, 100, 75]]
+    }
+  },
+  "sheller": {
+    "source": "sprites/enemies/sheller.png",
+    "scale": 1,
+    "alpha_threshold": 128,
+    "render_size": [52, 58],
+    "fps": {"walk": 8, "death": 10},
+    "regions": {
+      "walk": [[135, 75, 85, 100], [215, 75, 85, 100], [295, 75, 85, 100], [375, 75, 90, 100]],
+      "death": [[20, 205, 80, 70], [105, 205, 80, 70], [200, 205, 80, 70]]
+    }
+  },
+  "planter": {
+    "source": "sprites/enemies/planter.png",
+    "scale": 1,
+    "alpha_threshold": 128,
+    "render_size": [70, 92],
+    "fps": {"walk": 5, "death": 8},
+    "regions": {
+      "walk": [[125, 80, 85, 170], [210, 80, 85, 170], [295, 80, 85, 170]],
+      "death": [[440, 80, 75, 170], [515, 80, 75, 170]]
+    }
+  },
+  "effects": {
+    "source": "sprites/effects/efectos.png",
+    "scale": 1,
+    "alpha_threshold": 24,
+    "render_size": [58, 58],
+    "fps": {"smoke": 10, "sparkle": 12, "power": 12},
+    "regions": {
+      "smoke": [[30, 20, 190, 180], [215, 20, 180, 180], [385, 20, 165, 180], [525, 20, 150, 180]],
+      "sparkle": [[735, 345, 190, 180], [920, 345, 180, 180], [1080, 345, 160, 180], [1240, 345, 150, 180]],
+      "power": [[35, 535, 210, 170], [230, 535, 200, 170], [420, 535, 180, 170], [590, 535, 160, 170]]
+    }
+  },
+  "visuals": {
+    "menu_background": {"source": "tiles/backgrounds/menu.png"},
+    "pause_background": {"source": "tiles/backgrounds/pausa.jpg"},
+    "goal_castle": {"source": "sprites/items/castillo.png", "rect": [0, 0, 1254, 1254], "background_colors": [[0, 0, 0]], "background_tolerance": 10, "target_size": [180, 180]},
+    "ground": {"source": "tiles/ground/textura.png", "target_size": [48, 48]},
+    "block": {"source": "tiles/blocks/bloques.jpg", "rect": [197, 253, 342, 215], "trim": false, "target_size": [48, 48]},
+    "used_block": {"source": "tiles/blocks/bloques.jpg", "rect": [380, 15, 340, 214], "trim": false, "target_size": [48, 48]},
+    "platform": {"source": "tiles/blocks/bloques.jpg", "rect": [16, 253, 155, 215], "trim": false, "target_size": [48, 48]},
+    "background_1": {"source": "tiles/backgrounds/fondo.png", "rect": [4, 16, 514, 435], "trim": false, "scale": 2},
+    "background_2": {"source": "tiles/backgrounds/fondo.png", "rect": [521, 16, 514, 435], "trim": false, "scale": 2},
+    "background_3": {"source": "tiles/backgrounds/fondo.png", "rect": [1037, 16, 514, 435], "trim": false, "scale": 2},
+    "background_4": {"source": "tiles/backgrounds/fondo.png", "rect": [1553, 16, 513, 435], "trim": false, "scale": 2},
+    "coin": {"source": "sprites/items/poderes.png", "rect": [1085, 250, 125, 130], "target_size": [28, 36]},
+    "speed": {"source": "sprites/items/poderes.png", "rect": [680, 600, 135, 145], "target_size": [38, 38]},
+    "jump": {"source": "sprites/items/poderes.png", "rect": [285, 485, 135, 135], "target_size": [38, 38]}
+  }
+}

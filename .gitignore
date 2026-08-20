@@ -1,0 +1,35 @@
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Cachés y bytecode de Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Empaquetado
+build/
+dist/
+*.egg-info/
+
+# Editores y sistema operativo
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archivos temporales y registros
+*.log
+*.tmp
+*.bak
+
+# Progreso local generado durante las partidas
+data/progress.json
